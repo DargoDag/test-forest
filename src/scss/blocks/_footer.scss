@@ -1,0 +1,26 @@
+.footer {
+  position: absolute;
+  left: 520rem;
+  bottom: 100rem;
+
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+
+  &__item {
+    font-size: 14rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    padding: 4rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 94rem;
+    }
+  }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasmir</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <ul class="menu">
+          <li class="menu__item active">Home</li>
+          <li class="menu__item">Style Hair</li>
+          <li class="menu__item">Models</li>
+          <li class="menu__item">Shop</li>
+          <li class="menu__item">Contact</li>
+        </ul>
+        <button class="cart-btn">
+          <img src="./img/cart.svg" alt="cart icon" />
+          <span class="cart-btn__count" id="cartCount">1</span>
+        </button>
+      </header>
+      <main class="main">
+        <aside class="aside">
+          <div class="logo">Kasmir</div>
+          <div class="slider__navigation">
+            <div class="slides__counter">
+              <span class="slides__current-number" id="currentSlide">01</span>
+              <div class="swiper-pagination"></div>
+              <span class="slides__length-number" id="slideLength">06</span>
+            </div>
+          </div>
+          <div class="arrow" id="arrow">
+            <svg
+              width="16"
+              height="30"
+              viewBox="0 0 16 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.29289 29.7071C7.68342 30.0976 8.31658 30.0976 8.70711 29.7071L15.0711 23.3431C15.4616 22.9526 15.4616 22.3195 15.0711 21.9289C14.6805 21.5384 14.0474 21.5384 13.6569 21.9289L8 27.5858L2.34315 21.9289C1.95262 21.5384 1.31946 21.5384 0.928932 21.9289C0.538408 22.3195 0.538408 22.9526 0.928932 23.3431L7.29289 29.7071ZM7 0L7 29H9L9 0L7 0Z"
+                fill="#B4977B"
+              />
+            </svg>
+          </div>
+        </aside>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide__img">
+                  <img src="./img/hair.jpg" alt="A man at the barber's" />
+                  <span class="slide__caption">The Best Hair Style 2021</span>
+                </div>
+                <div class="slide__right">
+                  <h3 class="slide__title">Lorem ipsum!</h3>
+                  <div class="slide__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                    felis non at tristique. Est ante magna diam magna pharetra.
+                    Turpis sagittis consectetur est, integer sed. Sagittis
+                    malesuada tellus diam sapien platea.
+                  </div>
+                  <button class="slide__button button">Shopping Now</button>
+                </div>
+                <span class="slide__number">01</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide__img">
+                  <img src="./img/hair.jpg" alt="A man at the barber's" />
+                  <span class="slide__caption">The Best Hair Style 2021</span>
+                </div>
+                <div class="slide__right">
+                  <h3 class="slide__title">Lorem ipsum!</h3>
+                  <div class="slide__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                    felis non at tristique. Est ante magna diam magna pharetra.
+                    Turpis sagittis consectetur est, integer sed. Sagittis
+                    malesuada tellus diam sapien platea. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Non felis non at
+                    tristique. Est ante magna diam magna pharetra. Turpis
+                    sagittis consectetur est, integer sed. Sagittis malesuada
+                    tellus diam sapien platea.
+                  </div>
+                  <button class="slide__button button">Shopping Now</button>
+                </div>
+                <span class="slide__number">02</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide__img">
+                  <img src="./img/hair.jpg" alt="A man at the barber's" />
+                  <span class="slide__caption">The Best Hair Style 2021</span>
+                </div>
+                <div class="slide__right">
+                  <h3 class="slide__title">Lorem ipsum!</h3>
+                  <div class="slide__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                    felis non at tristique. Est ante magna diam magna pharetra.
+                    Turpis sagittis consectetur est, integer sed. Sagittis
+                    malesuada tellus diam sapien platea. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Non felis non at
+                    tristique. Est ante magna diam magna pharetra. Turpis
+                    sagittis consectetur est, integer sed. Sagittis malesuada
+                    tellus diam sapien platea. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Non felis non at tristique. Est
+                    ante magna diam magna pharetra. Turpis sagittis consectetur
+                    est, integer sed. Sagittis malesuada tellus diam sapien
+                    platea. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Non felis non at tristique. Est ante magna diam magna
+                    pharetra. Turpis sagittis consectetur est, integer sed.
+                    Sagittis malesuada tellus diam sapien platea. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Non felis non
+                    at tristique. Est ante magna diam magna pharetra. Turpis
+                    sagittis consectetur est, integer sed. Sagittis malesuada
+                    tellus diam sapien platea. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Non felis non at tristique. Est
+                    ante magna diam magna pharetra. Turpis sagittis consectetur
+                    est, integer sed. Sagittis malesuada tellus diam sapien
+                    platea.
+                  </div>
+                  <button class="slide__button button">Shopping Now</button>
+                </div>
+                <span class="slide__number">03</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide__img">
+                  <img src="./img/hair.jpg" alt="A man at the barber's" />
+                  <span class="slide__caption">The Best Hair Style 2021</span>
+                </div>
+                <div class="slide__right">
+                  <h3 class="slide__title">Lorem ipsum!</h3>
+                  <div class="slide__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                    felis non at tristique. Est ante magna diam magna pharetra.
+                    Turpis sagittis consectetur est, integer sed. Sagittis
+                    malesuada tellus diam sapien platea.
+                  </div>
+                  <button class="slide__button button">Shopping Now</button>
+                </div>
+                <span class="slide__number">04</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide__img">
+                  <img src="./img/hair.jpg" alt="A man at the barber's" />
+                  <span class="slide__caption">The Best Hair Style 2021</span>
+                </div>
+                <div class="slide__right">
+                  <h3 class="slide__title">Lorem ipsum!</h3>
+                  <div class="slide__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                    felis non at tristique. Est ante magna diam magna pharetra.
+                    Turpis sagittis consectetur est, integer sed. Sagittis
+                    malesuada tellus diam sapien platea. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Non felis non at
+                    tristique. Est ante magna diam magna pharetra. Turpis
+                    sagittis consectetur est, integer sed. Sagittis malesuada
+                    tellus diam sapien platea.
+                  </div>
+                  <button class="slide__button button">Shopping Now</button>
+                </div>
+                <span class="slide__number">05</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <div class="slide__img">
+                  <img src="./img/hair.jpg" alt="A man at the barber's" />
+                  <span class="slide__caption">The Best Hair Style 2021</span>
+                </div>
+                <div class="slide__right">
+                  <h3 class="slide__title">Lorem ipsum!</h3>
+                  <div class="slide__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
+                    felis non at tristique. Est ante magna diam magna pharetra.
+                    Turpis sagittis consectetur est, integer sed. Sagittis
+                    malesuada tellus diam sapien platea. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Non felis non at
+                    tristique. Est ante magna diam magna pharetra. Turpis
+                    sagittis consectetur est, integer sed. Sagittis malesuada
+                    tellus diam sapien platea. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Non felis non at tristique. Est
+                    ante magna diam magna pharetra. Turpis sagittis consectetur
+                    est, integer sed. Sagittis malesuada tellus diam sapien
+                    platea. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Non felis non at tristique. Est ante magna diam magna
+                    pharetra. Turpis sagittis consectetur est, integer sed.
+                    Sagittis malesuada tellus diam sapien platea. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Non felis non
+                    at tristique. Est ante magna diam magna pharetra. Turpis
+                    sagittis consectetur est, integer sed. Sagittis malesuada
+                    tellus diam sapien platea. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Non felis non at tristique. Est
+                    ante magna diam magna pharetra. Turpis sagittis consectetur
+                    est, integer sed. Sagittis malesuada tellus diam sapien
+                    platea.
+                  </div>
+                  <button class="slide__button button">Shopping Now</button>
+                </div>
+                <span class="slide__number">06</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decor decor-1">
+          <svg
+            width="130"
+            height="195"
+            viewBox="0 0 130 195"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.5">
+              <mask
+                id="mask0_705_148"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="130"
+                height="195"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M126.424 126.424L99.1157 99.1157L95.8241 102.407L129.96 136.543L126.424 140.079L92.2885 105.943L88.9969 109.234L129.96 150.197L126.424 153.733L85.4614 112.77L82.1697 116.062L129.96 163.852L126.424 167.387L78.6342 119.597L75.3426 122.889L129.96 177.506L126.424 181.042L71.8071 126.424L68.5154 129.716L129.96 191.16L126.424 194.696L64.9799 133.251L3.53553 194.696L0 191.16L61.4444 129.716L58.1527 126.424L3.53553 181.042L0 177.506L54.6172 122.889L51.3256 119.597L3.53553 167.387L0 163.852L47.7901 116.062L44.4984 112.77L3.53553 153.733L0 150.197L40.9629 109.234L37.6713 105.943L3.53553 140.079L0 136.543L34.1358 102.407L30.8441 99.1157L3.53553 126.424L0 122.889L27.3086 95.5801L3.53553 71.8071L7.07106 68.2715L30.8441 92.0446L34.1358 88.753L3.53553 58.1528L7.07106 54.6172L37.6713 85.2175L40.9629 81.9258L3.53553 44.4985L7.07106 40.9629L44.4984 78.3903L47.7901 75.0987L3.53553 30.8441L7.07106 27.3086L51.3256 71.5631L54.6172 68.2715L3.53553 17.1898L7.07106 13.6543L58.1528 64.736L61.4444 61.4444L3.53553 3.53553L7.07106 0L64.9799 57.9088L122.889 0L126.424 3.53553L68.5154 61.4444L71.8071 64.736L122.889 13.6543L126.424 17.1898L75.3426 68.2715L78.6342 71.5631L122.889 27.3086L126.424 30.8441L82.1698 75.0987L85.4614 78.3903L122.889 40.9629L126.424 44.4985L88.9969 81.9258L92.2885 85.2175L122.889 54.6172L126.424 58.1528L95.8241 88.753L99.1157 92.0446L122.889 68.2715L126.424 71.8071L102.651 95.5801L129.96 122.889L126.424 126.424ZM64.9799 64.9799L61.6883 68.2715L64.9799 71.5632L68.2715 68.2715L64.9799 64.9799ZM58.1528 71.8071L54.8611 75.0987L58.1528 78.3903L61.4444 75.0987L58.1528 71.8071ZM51.3256 78.6342L48.034 81.9258L51.3256 85.2175L54.6172 81.9258L51.3256 78.6342ZM44.4984 85.4614L41.2068 88.753L44.4985 92.0446L47.7901 88.753L44.4984 85.4614ZM37.6713 92.2885L34.3797 95.5801L37.6713 98.8718L40.9629 95.5801L37.6713 92.2885ZM92.2885 92.2885L95.5801 95.5801L92.2885 98.8718L88.9969 95.5801L92.2885 92.2885ZM85.4614 85.4614L88.753 88.753L85.4614 92.0446L82.1697 88.753L85.4614 85.4614ZM78.6342 78.6342L81.9258 81.9258L78.6342 85.2175L75.3426 81.9258L78.6342 78.6342ZM71.8071 71.8071L75.0987 75.0987L71.8071 78.3903L68.5154 75.0987L71.8071 71.8071ZM64.9799 78.6342L61.6883 81.9258L64.9799 85.2175L68.2715 81.9258L64.9799 78.6342ZM58.1527 85.4614L54.8611 88.753L58.1528 92.0446L61.4444 88.753L58.1527 85.4614ZM51.3256 92.2885L48.034 95.5801L51.3256 98.8718L54.6172 95.5801L51.3256 92.2885ZM44.4984 99.1157L41.2068 102.407L44.4984 105.699L47.7901 102.407L44.4984 99.1157ZM85.4614 99.1157L88.753 102.407L85.4614 105.699L82.1697 102.407L85.4614 99.1157ZM78.6342 92.2885L81.9258 95.5801L78.6342 98.8718L75.3426 95.5801L78.6342 92.2885ZM71.8071 85.4614L75.0987 88.753L71.8071 92.0446L68.5154 88.753L71.8071 85.4614ZM64.9799 92.2885L61.6883 95.5801L64.9799 98.8718L68.2715 95.5801L64.9799 92.2885ZM58.1528 99.1157L54.8611 102.407L58.1528 105.699L61.4444 102.407L58.1528 99.1157ZM51.3256 105.943L48.034 109.234L51.3256 112.526L54.6172 109.234L51.3256 105.943ZM78.6342 105.943L81.9258 109.234L78.6342 112.526L75.3426 109.234L78.6342 105.943ZM71.8071 99.1157L75.0987 102.407L71.8071 105.699L68.5154 102.407L71.8071 99.1157ZM64.9799 105.943L61.6883 109.234L64.9799 112.526L68.2715 109.234L64.9799 105.943ZM58.1528 112.77L54.8611 116.062L58.1528 119.353L61.4444 116.062L58.1528 112.77ZM71.8071 112.77L75.0987 116.062L71.8071 119.353L68.5154 116.062L71.8071 112.77ZM64.9799 119.597L61.6883 122.889L64.9799 126.18L68.2715 122.889L64.9799 119.597Z"
+                  fill="#E5E5E5"
+                />
+              </mask>
+              <g mask="url(#mask0_705_148)">
+                <circle cx="64.9799" cy="95.5014" r="58.2316" fill="#E5E5E5" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="decor decor-2">
+          <svg
+            width="130"
+            height="195"
+            viewBox="0 0 130 195"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.5">
+              <mask
+                id="mask0_705_148"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="130"
+                height="195"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M126.424 126.424L99.1157 99.1157L95.8241 102.407L129.96 136.543L126.424 140.079L92.2885 105.943L88.9969 109.234L129.96 150.197L126.424 153.733L85.4614 112.77L82.1697 116.062L129.96 163.852L126.424 167.387L78.6342 119.597L75.3426 122.889L129.96 177.506L126.424 181.042L71.8071 126.424L68.5154 129.716L129.96 191.16L126.424 194.696L64.9799 133.251L3.53554 194.696L2.43663e-06 191.16L61.4444 129.716L58.1528 126.424L3.53554 181.042L2.43663e-06 177.506L54.6172 122.889L51.3256 119.597L3.53554 167.387L2.43663e-06 163.852L47.7901 116.062L44.4984 112.77L3.53554 153.733L2.43663e-06 150.197L40.9629 109.234L37.6713 105.943L3.53554 140.079L2.43663e-06 136.543L34.1358 102.407L30.8441 99.1157L3.53554 126.424L2.43663e-06 122.889L27.3086 95.5801L3.53553 71.8071L7.07107 68.2715L30.8441 92.0446L34.1358 88.753L3.53553 58.1528L7.07107 54.6172L37.6713 85.2175L40.9629 81.9258L3.53553 44.4985L7.07107 40.9629L44.4984 78.3903L47.7901 75.0987L3.53553 30.8441L7.07107 27.3086L51.3256 71.5631L54.6172 68.2715L3.53553 17.1898L7.07107 13.6543L58.1528 64.736L61.4444 61.4444L3.53553 3.53553L7.07107 0L64.9799 57.9088L122.889 0L126.424 3.53553L68.5154 61.4444L71.8071 64.736L122.889 13.6543L126.424 17.1898L75.3426 68.2715L78.6342 71.5631L122.889 27.3086L126.424 30.8441L82.1698 75.0987L85.4614 78.3903L122.889 40.9629L126.424 44.4985L88.9969 81.9258L92.2885 85.2175L122.889 54.6172L126.424 58.1528L95.8241 88.753L99.1157 92.0446L122.889 68.2715L126.424 71.8071L102.651 95.5801L129.96 122.889L126.424 126.424ZM64.9799 64.9799L61.6883 68.2715L64.9799 71.5632L68.2715 68.2715L64.9799 64.9799ZM58.1528 71.8071L54.8611 75.0987L58.1528 78.3903L61.4444 75.0987L58.1528 71.8071ZM51.3256 78.6342L48.034 81.9258L51.3256 85.2175L54.6172 81.9258L51.3256 78.6342ZM44.4985 85.4614L41.2068 88.753L44.4985 92.0446L47.7901 88.753L44.4985 85.4614ZM37.6713 92.2885L34.3797 95.5801L37.6713 98.8718L40.9629 95.5801L37.6713 92.2885ZM92.2885 92.2885L95.5801 95.5801L92.2885 98.8718L88.9969 95.5801L92.2885 92.2885ZM85.4614 85.4614L88.753 88.753L85.4614 92.0446L82.1697 88.753L85.4614 85.4614ZM78.6342 78.6342L81.9258 81.9258L78.6342 85.2175L75.3426 81.9258L78.6342 78.6342ZM71.8071 71.8071L75.0987 75.0987L71.8071 78.3903L68.5154 75.0987L71.8071 71.8071ZM64.9799 78.6342L61.6883 81.9258L64.9799 85.2175L68.2715 81.9258L64.9799 78.6342ZM58.1528 85.4614L54.8611 88.753L58.1528 92.0446L61.4444 88.753L58.1528 85.4614ZM51.3256 92.2885L48.034 95.5801L51.3256 98.8718L54.6172 95.5801L51.3256 92.2885ZM44.4984 99.1157L41.2068 102.407L44.4984 105.699L47.7901 102.407L44.4984 99.1157ZM85.4614 99.1157L88.753 102.407L85.4614 105.699L82.1697 102.407L85.4614 99.1157ZM78.6342 92.2885L81.9258 95.5801L78.6342 98.8718L75.3426 95.5801L78.6342 92.2885ZM71.8071 85.4614L75.0987 88.753L71.8071 92.0446L68.5154 88.753L71.8071 85.4614ZM64.9799 92.2885L61.6883 95.5801L64.9799 98.8718L68.2715 95.5801L64.9799 92.2885ZM58.1528 99.1157L54.8611 102.407L58.1528 105.699L61.4444 102.407L58.1528 99.1157ZM51.3256 105.943L48.034 109.234L51.3256 112.526L54.6172 109.234L51.3256 105.943ZM78.6342 105.943L81.9258 109.234L78.6342 112.526L75.3426 109.234L78.6342 105.943ZM71.8071 99.1157L75.0987 102.407L71.8071 105.699L68.5154 102.407L71.8071 99.1157ZM64.9799 105.943L61.6883 109.234L64.9799 112.526L68.2715 109.234L64.9799 105.943ZM58.1528 112.77L54.8611 116.062L58.1528 119.353L61.4444 116.062L58.1528 112.77ZM71.8071 112.77L75.0987 116.062L71.8071 119.353L68.5154 116.062L71.8071 112.77ZM64.9799 119.597L61.6883 122.889L64.9799 126.18L68.2715 122.889L64.9799 119.597Z"
+                  fill="#E5E5E5"
+                />
+              </mask>
+              <g mask="url(#mask0_705_148)">
+                <circle cx="64.9799" cy="95.5014" r="58.2316" fill="#E5E5E5" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="decor decor-3">
+          <svg
+            width="161"
+            height="242"
+            viewBox="0 0 161 242"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.5">
+              <mask
+                id="mask0_843_2"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="161"
+                height="242"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M117.571 127.5L122.536 122.536L156.536 156.536L160.071 153L126.071 119L156.536 88.5355L153 85L122.536 115.464L117.571 110.5L156.536 71.5355L153 68L114.036 106.964L109.071 102L156.536 54.5355L153 51L105.536 98.4645L100.571 93.5L156.536 37.5355L153 34L97.0355 89.9645L92.0711 85L156.536 20.5355L153 17L88.5355 81.4645L83.5711 76.5L156.536 3.53553L153 0L80.0355 72.9645L7.07106 0L3.53553 3.53553L76.5 76.5L71.5355 81.4645L7.07106 17L3.53553 20.5355L68 85L63.0355 89.9645L7.07106 34L3.53553 37.5355L59.5 93.5L54.5355 98.4645L7.07106 51L3.53553 54.5355L51 102L46.0355 106.964L7.07106 68L3.53553 71.5355L42.5 110.5L37.5355 115.464L7.07106 85L3.53553 88.5355L34 119L0 153L3.53553 156.536L37.5355 122.536L42.5 127.5L0 170L3.53553 173.536L46.0355 131.036L51 136L0 187L3.53553 190.536L54.5355 139.536L59.5 144.5L0 204L3.53553 207.536L63.0355 148.036L68 153L0 221L3.53553 224.536L71.5355 156.536L76.5 161.5L0 238L3.53553 241.536L80.0355 165.036L156.536 241.536L160.071 238L83.5711 161.5L88.5355 156.536L156.536 224.536L160.071 221L92.0711 153L97.0355 148.036L156.536 207.536L160.071 204L100.571 144.5L105.536 139.536L156.536 190.536L160.071 187L109.071 136L114.036 131.036L156.536 173.536L160.071 170L117.571 127.5ZM41.0711 119L46.0355 123.964L51 119L46.0355 114.036L41.0711 119ZM49.5711 110.5L54.5355 115.464L59.5 110.5L54.5355 105.536L49.5711 110.5ZM58.0711 102L63.0355 106.964L68 102L63.0355 97.0355L58.0711 102ZM66.5711 93.5L71.5355 98.4645L76.5 93.5L71.5355 88.5355L66.5711 93.5ZM75.0711 85L80.0355 89.9645L85 85L80.0355 80.0355L75.0711 85ZM114.036 123.964L119 119L114.036 114.036L109.071 119L114.036 123.964ZM105.536 105.536L110.5 110.5L105.536 115.464L100.571 110.5L105.536 105.536ZM97.0355 97.0355L102 102L97.0355 106.964L92.0711 102L97.0355 97.0355ZM88.5355 88.5355L93.5 93.5L88.5355 98.4645L83.5711 93.5L88.5355 88.5355ZM80.0355 97.0355L75.0711 102L80.0355 106.964L85 102L80.0355 97.0355ZM71.5355 105.536L66.5711 110.5L71.5355 115.464L76.5 110.5L71.5355 105.536ZM63.0355 114.036L58.0711 119L63.0355 123.964L68 119L63.0355 114.036ZM54.5355 122.536L49.5711 127.5L54.5355 132.464L59.5 127.5L54.5355 122.536ZM105.536 122.536L110.5 127.5L105.536 132.464L100.571 127.5L105.536 122.536ZM97.0355 114.036L102 119L97.0355 123.964L92.0711 119L97.0355 114.036ZM88.5355 105.536L93.5 110.5L88.5355 115.464L83.5711 110.5L88.5355 105.536ZM58.0711 136L63.0355 140.964L68 136L63.0355 131.036L58.0711 136ZM66.5711 127.5L71.5355 132.464L76.5 127.5L71.5355 122.536L66.5711 127.5ZM75.0711 119L80.0355 123.964L85 119L80.0355 114.036L75.0711 119ZM97.0355 140.964L102 136L97.0355 131.036L92.0711 136L97.0355 140.964ZM88.5355 122.536L93.5 127.5L88.5355 132.464L83.5711 127.5L88.5355 122.536ZM80.0355 131.036L75.0711 136L80.0355 140.964L85 136L80.0355 131.036ZM71.5355 139.536L66.5711 144.5L71.5355 149.464L76.5 144.5L71.5355 139.536ZM88.5355 139.536L93.5 144.5L88.5355 149.464L83.5711 144.5L88.5355 139.536ZM80.0355 148.036L75.0711 153L80.0355 157.964L85 153L80.0355 148.036Z"
+                  fill="#E5E5E5"
+                />
+              </mask>
+              <g mask="url(#mask0_843_2)">
+                <circle cx="80.0355" cy="118.036" r="72.5" fill="#E5E5E5" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <button class="mob-btn mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </main>
+      <footer class="footer">
+        <div class="socials">
+          <a href="#" class="socials__item">facebook</a>
+          <a href="#" class="socials__item">instagram</a>
+          <a href="#" class="socials__item">twitter</a>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

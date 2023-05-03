@@ -1,0 +1,82 @@
+.header {
+  padding: 60rem 0;
+
+  display: flex;
+  justify-content: end;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 162rem;
+  z-index: 2;
+
+  @include mobile {
+    justify-content: start;
+    right: unset;
+    left: 0;
+    padding: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  margin-right: 108rem;
+
+  font-size: 18rem;
+
+  @include mobile {
+    display: none;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &.active {
+      color: #b4977b;
+      font-weight: 500;
+      transition: color, ease-in 0.24s;
+    }
+
+    &:hover {
+      color: #b4977b;
+      transition: color, ease-in 0.24s;
+    }
+
+    &:not(:last-child) {
+      margin-right: 58rem;
+    }
+  }
+}
+
+.cart-btn {
+  width: 24rem;
+  height: 24rem;
+  position: relative;
+
+  @include mobile {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__count {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: $black-color;
+    border-radius: 50%;
+    color: $white-color;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5rem;
+    right: 0;
+  }
+
+  img {
+    width: 16rem;
+  }
+}
+
+// Каунтер корзины побольше
