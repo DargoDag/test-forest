@@ -23,6 +23,16 @@ let swiper = new Swiper('.mySwiper', {
   runCallbacksOnInit: true
 });
 
+window.addEventListener('wheel', event => {
+  if (event.target.classList.contains('slide__descr')) {
+    swiper.mousewheel.disable();
+    console.log('ЛЕБ БЛЕЯ');
+  } else {
+    swiper.mousewheel.enable();
+    console.log('АГАР СКА');
+  }
+});
+
 function change() {
   let currentSlide = document.getElementById('currentSlide');
   let slideLength = document.getElementById('slideLength');
@@ -43,5 +53,13 @@ swiper.on('slideChange', change);
 let toLastSlide = document.getElementById('arrow');
 
 toLastSlide.addEventListener('click', function () {
-  swiper.slideTo(5);
+  swiper.slideTo(swiper.realIndex + 1);
+});
+
+let menuBtn = document.querySelector('.mob-btn');
+let menu = document.querySelector('.header');
+
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.toggle('active')
+  menu.classList.toggle('active')
 });

@@ -185,12 +185,19 @@ body {
     border-radius: 50rem;
     border: none;
     color: $white-color;
+    transition: color ease-in .24s, background-color ease-in .24s;
+    border: 2rem solid $main-color;
 
     @include mobile {
       font-size: 14rem;
       margin-top: 20rem;
       padding: 12rem 20rem;
     }
+
+    &:hover {
+      color: $main-color;
+      background-color: #fff;
+    } 
   }
 
   &__number {
@@ -228,8 +235,17 @@ body {
   margin: 0 !important;
   width: 4rem !important;
   height: 42rem !important;
-  border-radius: 2rem !important;
   background-color: $main-color !important;
+  border-radius: 0 !important;
+
+  &:first-child,
+  &:last-child {
+    border-radius: 2rem !important;
+  }
+
+  &-active {
+    border-radius: 2rem !important;
+  }
 }
 
 .swiper-pagination {
@@ -251,7 +267,7 @@ body {
   justify-content: center;
 
   @include mobile {
-    display: none; 
+    display: none;
   }
 }
 
@@ -268,7 +284,7 @@ body {
   cursor: pointer;
 
   @include mobile {
-    display: none; 
+    display: none;
   }
 
   svg {
@@ -315,17 +331,35 @@ body {
 }
 
 .mob-btn {
-  width: 26px;
-  height: 20px;
+  width: 46px;
+  height: 40px;
+  padding: 10px;
 
   position: absolute;
-  right: 20rem;
-  top: 20rem;
+  z-index: 3;
+  right: 10rem;
+  top: 10rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+
+  &.active {
+    span {
+      &:first-child {
+        transform: rotate(-45deg) translate(-5rem, 5rem);
+        transition: transform ease-in .14s;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg) translate(-4rem, -4rem);
+        transition: transform ease-in .14s;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+  }
 
   span {
     display: block;

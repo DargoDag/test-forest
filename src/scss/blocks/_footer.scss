@@ -18,6 +18,11 @@
 
     padding: 4rem;
     cursor: pointer;
+    transition: color ease-in .24s;
+
+    &:hover {
+      color: $main-color;
+    }
 
     &:not(:last-child) {
       margin-right: 94rem;
